@@ -204,3 +204,42 @@ Check the status
  if you want to start the tidal-connect-service automatically run 
  
      systemctl enable ifi-streamer-tidal-connect.service
+     
+ Exemple to change audio sources :
+ 
+nano /lib/systemd/system/ifi-streamer-tidal-connect.service
+
+[Unit]
+Description=RasPi Streamer Tidal Connect Service
+[Service]
+Restart=on-failure
+ExecStart=/usr/ifi/ifi-tidal-release/bin/tidal_connect_application \
+                                --tc-certificate-path "/usr/ifi/ifi-tidal-release/id_certificate/IfiAudio_ZenStream.dat" \
+                                -f "HiTide RasPi Streamer" \
+                                --codec-mpegh true \
+                                --codec-mqa false \
+                                --model-name "HiTide RasPi Streamer" \
+                                --disable-app-security false \
+                                --disable-web-security false \
+                                --enable-mqa-passthrough false \
+                                --log-level 3 \
+                                --playback-device "iFi (by AMR) HD USB Audio: - (hw:2,0)" \
+                                --enable-websocket-log "0"
+
+User=root
+Group=root
+RestartSec=1
+KillMode=control-group
+[Install]
+WantedBy=multi-user.target
+
+
+
+
+
+
+
+                                                      [ Read 23 lines ]
+^G Get Help    ^O Write Out   ^W Where Is    ^K Cut Text    ^J Justify     ^C Cur Pos     M-U Undo       M-A Mark Text
+^X Exit        ^R Read File   ^\ Replace     ^U Uncut Text  ^T To Spell    ^_ Go To Line  M-E Redo       M-6 Copy Text
+
