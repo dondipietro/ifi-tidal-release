@@ -243,3 +243,85 @@ WantedBy=multi-user.target
 ^G Get Help    ^O Write Out   ^W Where Is    ^K Cut Text    ^J Justify     ^C Cur Pos     M-U Undo       M-A Mark Text
 ^X Exit        ^R Read File   ^\ Replace     ^U Uncut Text  ^T To Spell    ^_ Go To Line  M-E Redo       M-6 Copy Text
 
+
+
+
+Manual bash command : 
+
+pi@moodetdp:/usr/ifi $ sudo /usr/ifi/ifi-tidal-release/bin/tidal_connect_application --tc-certificate-path /usr/ifi/ifi-tidal-release/id_certificate/IfiAudio_ZenStream.dat -f "RasPi Chambre SMSL" --codec-mpegh true --codec-mqa false --model-name "HiTide RasPi Streamer" --disable-app-security false --disable-web-security false --enable-mqa-passthrough true --log-level 3 --playback-device "SMSL USB AUDIO: Audio (hw:2,0)" --enable-websocket-log 0
+
+
+Log with Tidal working OK and MQA OK
+STARTING TidalConnect services, version: 1.1.3
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_hdmi.pcm.front.0:CARD=0'
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5047:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM front
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.rear
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.center_lfe
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.side
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_hdmi.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5047:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM surround21
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_hdmi.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5047:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM surround21
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_hdmi.pcm.surround40.0:CARD=0'
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5047:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM surround40
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_hdmi.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5047:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM surround41
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_hdmi.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5047:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM surround50
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_hdmi.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5047:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM surround51
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_hdmi.pcm.surround71.0:CARD=0'
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5047:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM surround71
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_hdmi.pcm.iec958.0:CARD=0,AES0=4,AES1=130,AES2=0,AES3=2'
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5047:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM iec958
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_hdmi.pcm.iec958.0:CARD=0,AES0=4,AES1=130,AES2=0,AES3=2'
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5047:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM spdif
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_hdmi.pcm.iec958.0:CARD=0,AES0=4,AES1=130,AES2=0,AES3=2'
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5047:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM spdif
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.hdmi
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.hdmi
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.modem
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.modem
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.phoneline
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.phoneline
+ALSA lib pcm_dmix.c:1043:(snd_pcm_dmix_open) The dmix plugin supports only playback stream
+ALSA lib pcm_dmix.c:1043:(snd_pcm_dmix_open) The dmix plugin supports only playback stream
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'defaults.bluealsa.device'
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5036:(snd_config_expand) Args evaluate error: No such file or directory
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM bluealsa
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'defaults.bluealsa.device'
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5036:(snd_config_expand) Args evaluate error: No such file or directory
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM bluealsa
+ALSA lib ../../../src/asound/bluealsa-pcm.c:865:(_snd_pcm_bluealsa_open) Invalid BT device address: XX:XX:XX:XX:XX:XX
+ALSA lib ../../../src/asound/bluealsa-pcm.c:865:(_snd_pcm_bluealsa_open) Invalid BT device address: XX:XX:XX:XX:XX:XX
+Expression 'alsa_snd_pcm_hw_params_set_period_size_near( pcm, hwParams, &alsaPeriodFrames, &dir )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 924
+Expression 'alsa_snd_pcm_hw_params_set_period_size_near( pcm, hwParams, &alsaPeriodFrames, &dir )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 924
+Expression 'alsa_snd_pcm_hw_params_set_period_size_near( pcm, hwParams, &alsaPeriodFrames, &dir )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 924
+STARTED TidalConnect services.
+[2021-04-16 11:31:18.069] [tisoc] [warning] [PlaybackControllerImpl.cpp:472] Illegal state:1
+[2021-04-16 11:31:29.073] [tisoc] [warning] [logger.cpp:22] [audio_worker.cpp:321] Attempting to initialize a decoder without initial data!
+
